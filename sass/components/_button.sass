@@ -1,0 +1,16 @@
+.btn
+    font-size: 2rem
+    &:link,&:visited
+        @include style-link
+        padding: 1.5rem 4rem
+        background-color: $color_white
+        border-radius: 5rem
+        margin-top: 6.5rem
+        transition: hover,active .5s
+    &:hover
+        transform: translateY(-0.5rem)
+    &:active
+        transform: translateY(-0.2rem)
+    &_animated
+        animation: btnToUp 1s linear 1s
+        animation-fill-mode: backwards
