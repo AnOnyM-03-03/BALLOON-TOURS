@@ -1,7 +1,15 @@
-    //  миксин для стиля кнопки
-    @mixin style-link
-    text-transform: uppercase
-    display: inline-block
-    text-decoration: none
-    color: $color_gray
+//  миксин для стиля кнопки
+@mixin style-link
+  text-transform: uppercase
+  display: inline-block
+  text-decoration: none
+  color: $color_gray
+
+//  миксин для грид контейнера
+@mixin clearFix
+  &::after
+    content: ''
+    display: table
+    clear: both
+  
     
