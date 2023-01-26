@@ -67,6 +67,14 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; color: #777; font-si
 .header__logo { position: absolute; left: 5rem; top: 5rem; height: 7rem; width: 5.6rem; }
 .header__content { text-align: center; color: #FFF; position: absolute; top: 40%; left: 50%; width: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
+.footer { padding: 8rem; background: #333; }
+.footer__logo { width: 12rem; }
+.footer__list { list-style: none; text-align: center; }
+.footer__item { display: inline-block; }
+.footer__item:not(:last-child) { margin-right: 5rem; }
+.footer__link:link, .footer__link:visited { color: #777; text-transform: uppercase; text-decoration: none; font-size: 1.6rem; letter-spacing: 0.2rem; font-weight: 300; display: inline-block; -webkit-transition: 0.5s; transition: 0.5s; }
+.footer__link:hover { -webkit-transform: rotate(5deg) scale(1.2); transform: rotate(5deg) scale(1.2); color: #A14F03; }
+
 .btn { position: relative; font-size: 2rem; -webkit-box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3); box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3); }
 .btn, .btn:link, .btn:visited { text-transform: uppercase; display: inline-block; text-decoration: none; color: #777; padding: 1.5rem 4rem; background-color: #FFF; border-radius: 5rem; margin-top: 6.5rem; -webkit-transition: hover, active 0.5s; transition: hover, active 0.5s; border: none; }
 .btn:hover { -webkit-transform: translateY(-0.5rem); transform: translateY(-0.5rem); }
@@ -75,7 +83,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; color: #777; font-si
 
 .btn_brown { background-color: #A14F03; color: #FFF; margin-top: 2rem; }
 
-.btn-text:link, .btn-text:visited { font-size: 1.6rem; letter-spacing: 0.2rem; font-weight: 700; color: #777; text-decoration: none; padding: 1rem; border-bottom: 0.1rem #A14F03 solid; }
+.btn-text:link, .btn-text:visited { font-size: 1.6rem; letter-spacing: 0.2rem; font-weight: 700; color: #777; text-decoration: none; padding: 1rem; border-bottom: 0.1rem #A14F03 solid; -webkit-transition: 0.8s; transition: 0.8s; }
 .btn-text:hover { background-color: #A14F03; color: #FFF; -webkit-box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3); box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3); }
 
 .composition { position: relative; }
