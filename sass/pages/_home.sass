@@ -1,11 +1,15 @@
 .section-about
   padding-top: 8rem
+  @include respond(tap-land)
+  padding-top: 3rem
 
 .section-adventure
+  margin-top: 150rem
   padding: 20rem 0
-  height: 95vh
   background: linear-gradient(90deg, rgba($color_brown-light,0.7)0.03%, rgba($color_brown-dark,0.7)99.94%),url(../images/section-adventure/adventure-bg.jpg) center/ cover no-repeat
   transform: skewY(7deg)
+  @include respond(tab-land)
+  margin-top: 8rem
   & > *
     transform: skewY(-7deg)
 

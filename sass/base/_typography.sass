@@ -8,6 +8,8 @@
     margin-bottom: 1rem
     animation: leftToRight 1s linear
     backface-visibility: hidden
+    @include respond(tap-land)
+    font-size: 4rem
   &_secondary
     font-weight: 300
     font-size: 4rem
@@ -15,6 +17,8 @@
     display: block
     animation: rightToLeft 1s linear
     backface-visibility: hidden
+    @include respond(tap-land)
+    font-size: 3.5rem
 
 .title-secondary
     position: relative
@@ -28,6 +32,8 @@
     text-align: center
     transition: all .3s
     backface-visibility: hidden
+    @include respond(tap-land)
+    font-size: 3rem
     &:hover
       transform: skewY(2deg) skewX(10deg)
       text-shadow: $title-shadow
@@ -39,8 +45,12 @@
     letter-spacing: .2rem
     text-transform: uppercase
     font-weight: 700
+    @include respond(tap-land)
+    font-size: 1.8rem
 
 .paragraph
   font-size: 1.6rem
   letter-spacing: .2rem
   font-weight: 400
+  @include respond(tap-land)
+  font-size: 1.5rem
