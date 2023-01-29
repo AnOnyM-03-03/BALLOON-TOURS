@@ -5,8 +5,14 @@
   width: 75%
   padding: 6rem
   transform: skewX(-15deg)
+  @include respond(tap-port)
+  transform: skewX(350deg)
+  text-align: center
+  padding: 3rem
   & > *
     transform: skewX(15deg)
+    @include respond(tap-port)
+    transform: skewX(-350deg)
   &__img
     width: 15rem
     height: 15rem
@@ -17,6 +23,10 @@
     margin-right: 4rem
     overflow: hidden
     position: relative
+    @include respond(tap-port)
+    margin: 0 auto
+    float: none
+    margin-bottom: 3rem
     img
       height: 100%
       transform: scale(1.2)
