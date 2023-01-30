@@ -2,8 +2,8 @@
     position: relative
     font-size: 2rem
     box-shadow: $box-shadow
-    @include respond(tap-land)
-    font-size: 1.8rem
+    @include respond(tab-land)
+        font-size: 1.8rem
     &, &:link,&:visited
         @include style-link
         padding: 1.5rem 4rem
@@ -12,11 +12,11 @@
         margin-top: 6.5rem
         transition: hover,active .5s
         border: none
-        @include respond(tap-land)
-        margin-top: 2rem
-        padding: 1.2rem 3.7rem
-        @include respond(tap-port)
-        padding: 2rem 4rem
+        @include respond(tab-land)
+            margin-top: 2rem
+            padding: 1.2rem 3.7rem
+        @include respond(tab-port)
+            padding: 2rem 4rem
 
 
     &:hover

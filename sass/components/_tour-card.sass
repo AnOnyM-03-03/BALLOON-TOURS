@@ -2,8 +2,8 @@
   height: 50rem
   perspective: 150rem
   position: relative
-  @include respond(tap-port)
-  height: 60rem
+  @include respond(tab-port)
+      height: auto
   &__side
     border-radius: .5rem
     overflow: hidden
@@ -16,13 +16,23 @@
     width: 100%
     backface-visibility: hidden
     box-shadow: $box-shadow
-    @include respond(tap-port)
-    height: 55rem
+    @include respond(tab-port)
+        height: auto
+        position: relative
+    &_front
+      @include respond(tab-port)
+          padding-bottom: 13rem
     &_back
       transform: rotateY(180deg)
       background: linear-gradient(120deg,$color_brown-light,$color_brown-dark)
+      @include respond(tab-port)
+          transform: rotateY(0deg)
+          clip-path: polygon(0 0, 101% 20%, 101% 101%, 0 101%)
+          margin-top: -10rem
   &:hover &__side_front
     transform: rotateY(-180deg)
+    @include respond(tab-port)
+        transform: rotateY(0deg)
   &:hover &__side_back
     transform: rotateY(0)
   &__img
@@ -35,8 +45,8 @@
       background: $color-brown-light url(../images/section-adventure/adventure-card2.png) center/ cover no-repeat
     &_3
       background: $color-brown-light url(../images/section-adventure/adventure-card3.png) center/ cover no-repeat
-    @include respond(tap-port)
-    height: 30rem
+    @include respond(tab-port)
+        height: 30rem
   &__title
     font-size: 2.8rem
     letter-spacing: .2rem
@@ -46,8 +56,8 @@
     position: absolute
     top: 17rem
     right: 0rem
-    @include respond(tap-port)
-    top: 25rem
+    @include respond(tab-port)
+        top: 25rem
   &__span
     background: linear-gradient(90deg, $color_brown-light, $color_brown-dark)
     padding: 1rem 2rem .3rem
@@ -77,12 +87,23 @@
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+    @include respond(tab-port)
+        position: relative
+        top: 0%
+        left: 0%
+        transform: translate(0%,0%)
+        padding: 5rem
+        padding-top: 10rem
+        text-align: center
+    
   &__text
     margin-bottom: 8rem
     text-transform: uppercase
     letter-spacing: .2rem
     color: $color-white
     text-align: center
+    @include respond(tab-port)
+        margin-bottom: 5rem
     &_1
       font-size: $fz-paragraph
       font-weight: 300

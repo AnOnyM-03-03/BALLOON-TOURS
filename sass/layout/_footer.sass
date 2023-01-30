@@ -6,16 +6,21 @@
   &__list
     list-style: none
     text-align: center
+    @include respond(phone)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
   &__item
     display: inline-block
     &:not(:last-child)
       margin-right: 5rem
     @include respond(tab-land)
-    &:not(:last-child)
-      margin-right: 1.6rem
+      &:not(:last-child)
+        margin-right: 1.6rem
     @include respond(tab-port)
-    margin-right: 3rem
-    margin-bottom: 3rem
+        margin-right: 3rem
+        margin-bottom: 3rem
 
   &__link
     &:link,&:visited

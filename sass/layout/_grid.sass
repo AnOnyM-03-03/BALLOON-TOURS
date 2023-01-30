@@ -3,15 +3,15 @@
   margin: 0 auto
   &:not(:last-child)
     margin-bottom: $margin-vertical-big
-    @include respond(tap-port)
-    margin-bottom: 3rem
+    @include respond(tab-port)
+      margin-bottom: 3rem
   @include clearFix
-  @include respond(tap-land)
-  max-width: 90.1rem
+  @include respond(tab-land)
+      max-width: 90.1rem
   @include respond(tab-port)
-  max-width: 60rem
-
-    
+      max-width: 60rem
+  @include respond(phone)
+      max-width: 50rem 
 .col-1-of-2
   width: calc((100% - #{$margin-horizontal}) /2)
 
@@ -24,7 +24,7 @@
 .col-1-of-4
   width: calc((100% - 3 * #{$margin-horizontal}) /4) 
   @include respond(tab-land)
-  width: calc((100% - 3 * #{2rem}) /4) 
+      width: calc((100% - 3 * #{2rem}) /4) 
 
 .col-2-of-4
   width: calc(2 * ((100% - 3 * #{$margin-horizontal}) /4) + #{$margin-horizontal})
@@ -37,11 +37,11 @@
   &:not(:last-child)
       margin-right: $margin-horizontal
   @include respond(tab-land)
-  &:not(:last-child)
+    &:not(:last-child)
       margin-right: 2rem
   @include respond(tab-port)
-  width: 100%
-  margin-right: 0 !important
-  margin-bottom: 4rem
+      width: 100%
+      margin-right: 0 !important
+      margin-bottom: 7rem
 
       
