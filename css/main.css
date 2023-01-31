@@ -224,7 +224,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; color: #777; font-si
 @media (max-width: 1240px) { .section-about { padding-top: 3rem; } }
 @media (max-width: 900px) { .section-about { margin-bottom: 40rem; } }
 
-.section-adventure { margin-top: 150rem; padding: 20rem 0; background: -webkit-gradient(linear, left top, right top, color-stop(0.03%, rgba(138, 133, 84, 0.7)), color-stop(99.94%, rgba(161, 79, 3, 0.7))), url(../images/section-adventure/adventure-bg.jpg) center/cover no-repeat; background: linear-gradient(90deg, rgba(138, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%), url(../images/section-adventure/adventure-bg.jpg) center/cover no-repeat; -webkit-transform: skewY(7deg); transform: skewY(7deg); }
+.section-adventure { margin-top: 15rem; padding: 20rem 0; background: -webkit-gradient(linear, left top, right top, color-stop(0.03%, rgba(138, 133, 84, 0.7)), color-stop(99.94%, rgba(161, 79, 3, 0.7))), url(../images/section-adventure/adventure-bg.jpg) center/cover no-repeat; background: linear-gradient(90deg, rgba(138, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%), url(../images/section-adventure/adventure-bg.jpg) center/cover no-repeat; -webkit-transform: skewY(7deg); transform: skewY(7deg); }
 @media (max-width: 1240px) { .section-adventure { margin-top: 8rem; } }
 @media (max-width: 900px) { .section-adventure { padding: 10rem 0; } }
 .section-adventure > * { -webkit-transform: skewY(-7deg); transform: skewY(-7deg); }
